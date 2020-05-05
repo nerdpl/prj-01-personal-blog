@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond&display=swap");
+
+.container {
+    display: flex;
+    margin: 5px;
+    font-family: "EB Garamond", Helvetica, Tahoma;
+    flex-direction: column;
+}
+
+.box {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.title {
+    text-align: center;
+    font-style: italic;
+    color: black;
+    text-transform: capitalize;
+}
+
+.link {
+    color: black;
+}
+
+.center {
+    text-align: center;
+}
+
+.ft {
+    text-align: center;
+    font-size: smaller;
+}
+
+.ingredients {
+    display: flex;
+    flex-direction: column;
+}
+
+.table {
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid black;
+}
+
+td {
+    border: 1px solid black;
+    padding: 3px;
+}
+
+.recipie {
+    text-align: justify;
+}
+
+@media(min-width:900px) {
+    .container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20% 60%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+            "title title"
+            "sb ingredients"
+            "sb recipie"
+            "ft ft";
+    }
+
+    .title {
+        grid-area: title;
+    }
+
+    .sb {
+        grid-area: sb;
+    }
+
+    .ingredients {
+        grid-area: ingredients;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .ft {
+        grid-area: ft;
+    }
+}

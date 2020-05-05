@@ -1,0 +1,102 @@
+@import url("posts.css");
+@import url("miniposts.css");
+@import url("https://fonts.googleapis.com/css?family=EB+Garamond&display=swap");
+
+.container {
+    display: flex;
+    margin: 5px;
+    font-family: "EB Garamond", Helvetica, Tahoma;
+    flex-direction: column;
+}
+
+.box {
+    border: 1px solid black;
+    margin: 5px;
+    padding: 5px;
+}
+
+.button {
+    border: 1px solid black;
+    padding: 10px;
+    line-height: 300%;
+    color: black;
+    text-decoration: none;
+}
+
+.button:hover {
+    background-color: black;
+    padding: 10px;
+    line-height: 300%;
+    color: white;
+    text-decoration: none;
+}
+
+.title {
+    text-align: center;
+    font-style: italic;
+    color: black;
+    text-transform: capitalize;
+}
+
+.photo {
+    margin: 5px;
+    width: 30%;
+}
+
+.intro {
+    margin: 5px;
+    text-align: center;
+}
+
+.link {
+    color: black;
+}
+
+.links {
+    text-align: center;
+}
+
+.ft {
+    text-align: center;
+    font-size: smaller;
+}
+
+@media(min-width:900px) {
+    .container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: 20% 60%;
+        grid-template-rows: repeat(4, auto);
+        grid-template-areas: 
+            "title title"
+            "sb photo"
+            "sb minipost"
+            "ft ft";
+    }
+
+    .title {
+        grid-area: title;
+    }
+
+    .photo {
+        grid-area: photo;
+    }
+
+    #sb {
+        grid-area: sb;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #minipostsframe {
+        grid-area: minipost;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .ft {
+        grid-area: ft;
+    }
+}

@@ -1,0 +1,26 @@
+.minipost {
+    display: flex;
+    flex-direction: row;
+}
+
+.date {
+    font-size: x-small;
+}
+
+.more {
+    font-size: small;
+    text-align: right;
+}
+
+.minitxt {
+    font-style: italic;
+    color: darkslategray;
+}
+
+.miniposttxt {
+    margin: 5px;
+}
+
+.titletext {
+    text-transform: capitalize;
+}
