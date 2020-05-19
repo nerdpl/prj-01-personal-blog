@@ -14,7 +14,8 @@ The subject of the project was to build a personal blog website from scratch (HT
 css
 - miniposts.css
 - posts.css
-- style.css    
+- style.css
+
 img
 - avatar.jpg
 - break.png
@@ -22,6 +23,7 @@ img
 - photo1.jpg
 - photo2.jpg
 - photo3.jpg
+
 index.html
 post1.html
 README.md
